@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 环境
+.env
+venv/
+.venv/
+env/
+
+# 编辑器 / 工具
+.vscode/
+.idea/
+.claude/
+.DS_Store
+
+# 运行产物（脚本会在当前目录写出这些文件）
+gillespie_output.png
+*.result
+*.tmp

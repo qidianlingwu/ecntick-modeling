@@ -1,0 +1,6 @@
+# EcNTick 建模依赖
+# Python >= 3.9（src/02 与 legacy 使用 np.trapezoid，需要 numpy >= 2.0）
+
+numpy>=2.0
+scipy>=1.10
+matplotlib>=3.6
