@@ -28,8 +28,8 @@
 | 04-23 18:47 | `robustness_waveforms.py` | 振荡参数鲁棒性扫描（`figs/fig6_robustness_waveforms.png`）|
 | 04-24 20:00 | `HRtest.py` | 参数试探 |
 
-**这一阶段的方向后来被放弃了。** 最初的思路是"用 repressilator 类振荡器 + AND 门实现
-肿瘤特异性脉冲"，但这类方案需要额外基因元件，与项目"极简回路"的核心主张冲突。
+**这一阶段的方向后来被放弃了。** 最初的思路是用 repressilator 类振荡器 + AND 门实现
+肿瘤特异性脉冲，但这类方案需要额外基因元件，与项目极简回路的核心主张冲突。
 
 **转向**：改为利用**自杀回路的天然弛豫振荡**（生长-稀释-阈值裂解），无需额外振荡元件。
 依据是文献 *Oscillations by minimal bacterial suicide circuits*（Marguet et al., PLoS ONE 2010）
