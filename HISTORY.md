@@ -104,8 +104,6 @@
 | 05-23 19:01 | `AAAgaigaigai.py` | **`src/02_pkpd_immune_rhythm.py`** | **免疫节律模型终版（+ Depot 缓释）** |
 | 05-23 19:11 | `AAAyaoxiaogai.py` | `legacy/drug_efficacy_v3_simple.py` | 简化的药效对比分支 |
 
-**为什么 `SRC/02` 选 `AAAgaigaigai` 而不是最后的 `AAAyaoxiaogai`？**
-
 `AAAyaoxiaogai`（19:11）虽然是最后一个修改的文件，但它的模型更简单
 （5 状态 `[B, E, NB, T, NB_total]`，无免疫节律变量）。
 而 `AAAgaigaigai` 包含完整的免疫节律机制（`A` / `X` / `J`）与 Depot 缓释项，
