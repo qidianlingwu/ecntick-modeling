@@ -109,8 +109,7 @@ ecntick-modeling/
 │   ├── 05_safety_window_robustness.py    安全窗口与半衰期鲁棒性
 │   └── 06_stochastic_individual_based.py 随机个体模型（非 Gillespie，见文件头）
 ├── legacy/                   ← 被取代的早期版本，保留以供追溯
-├── figs/                     ← 14 张输出图
-└── docs/                     ← 建模目的、答辩稿
+└── figs/                     ← 14 张输出图
 ```
 
 ---
