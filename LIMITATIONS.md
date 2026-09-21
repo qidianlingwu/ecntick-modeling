@@ -128,7 +128,7 @@ K50_eff_red   = K50_base / (1 + N_lacO_vals / K_N)   # 位点越多 → K50 越�
 
 - `src/06` 使用固定步长 `dt = 0.01 h`，未做步长收敛性检验（`dt` 减半后统计量是否变化）。
 - `src/01`、`src/03`、`src/04`、`src/05` 无 `if __name__ == '__main__'` 保护，导入即执行。
-- 输出依赖 `plt.show()`，未统一以 `plt.savefig()` 写入 `figs/`（`figs/` 下为历史输出）。
+- 输出依赖 `plt.show()`，脚本本身未调用 `plt.savefig()`；`figs/` 下的图在归档时由终版脚本统一导出。
 
 ---
 

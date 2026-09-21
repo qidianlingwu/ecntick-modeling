@@ -109,8 +109,11 @@ ecntick-modeling/
 │   ├── 05_safety_window_robustness.py    安全窗口与半衰期鲁棒性
 │   └── 06_stochastic_individual_based.py 随机个体模型（非 Gillespie，见文件头）
 ├── legacy/                   ← 被取代的早期版本，保留以供追溯
-└── figs/                     ← 14 张输出图
+└── figs/                     ← 6 张终版模型输出图（与 src/ 模块一一对应）
 ```
+
+各模块的输出图按 `fig0X_模块名.png` 命名，由对应脚本生成；
+运行方式见上节，在 Agg 后端下以 `plt.savefig()` 导出即可复现。
 
 ---
 

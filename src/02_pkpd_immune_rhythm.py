@@ -24,8 +24,7 @@ K_T = 3.0
 
 # 药效参数
 # 取值依据：k_kill 采用文献报道抗 PD-L1 阻断效应的保守下界，以避免高估疗效；
-# nb_EC50 为量级估计（非实验实测值）。二者对结论的影响已通过参数扫描检验，
-# 见 figs/fig5_sensitivity_analysis.png，逐参数来源见根目录 PARAMETERS.md。
+# nb_EC50 为量级估计（非实验实测值）。逐参数来源见根目录 PARAMETERS.md。
 k_kill = 0.095
 nb_EC50 = 2.0e6
 n_kill = 2.0
@@ -42,7 +41,7 @@ k_x_off = 0.20
 
 # 裂解佐剂信号 J
 # eta_J 取文献报道佐剂效应区间的保守下界，避免高估裂解带来的免疫增益。
-# 结论对 eta_J 的敏感性见 figs/fig5_sensitivity_analysis.png。详见 PARAMETERS.md。
+# 详见 PARAMETERS.md。
 J_burst = 0.65
 J_deg = 0.16
 K_J = 0.20

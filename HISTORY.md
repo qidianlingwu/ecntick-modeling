@@ -20,11 +20,11 @@
 
 | 时间 | 文件 | 做了什么 |
 |---|---|---|
-| 04-23 15:46 | `lactic_anoxia_andGate.py` | 乳酸 × 缺氧二维网格 + AND 门响应面（`figs/fig1_and_gate_surface.png`）|
+| 04-23 15:46 | `lactic_anoxia_andGate.py` | 乳酸 × 缺氧二维网格 + AND 门响应面 |
 | 04-23 16:02 | `repressilatorOSC.py` | 试算经典 repressilator 振荡器 |
 | 04-23 16:11 | `andGatedOscillatorCouplingModel.py` | 振荡器与 AND 门耦联模型 |
 | 04-23 16:26 | `therapy_output.py` | 首次尝试药效输出建模 |
-| 04-23 18:47 | `robustness_waveforms.py` | 振荡参数鲁棒性扫描（`figs/fig6_robustness_waveforms.png`）|
+| 04-23 18:47 | `robustness_waveforms.py` | 振荡参数鲁棒性扫描 |
 | 04-24 20:00 | `HRtest.py` | 参数试探 |
 
 **这一阶段的方向后来被放弃了。** 最初的思路是用 repressilator 类振荡器 + AND 门实现
@@ -33,10 +33,6 @@
 **转向**：改为利用**自杀回路的天然弛豫振荡**（生长-稀释-阈值裂解），无需额外振荡元件。
 依据是文献 *Oscillations by minimal bacterial suicide circuits*（Marguet et al., PLoS ONE 2010）
 ——该文证明简单自杀回路的振荡依赖宿主介导的质粒扩增，**不需要群体感应模块**。
-
-> 相关早期图：`figs/oscillation_comparison.png`、`figs/corrected_oscillation_comparison.png`、
-> `figs/verified_oscillation.png`、`figs/professional_slc_oscillation.png`、
-> `figs/verified_slc_oscillation.png`、`figs/realistic_slc_simulation.png`、`figs/project_oscillation_model.png`
 
 ---
 
@@ -59,9 +55,6 @@
 启动子被乳酸激活 ≠ 裂解蛋白能越过阈值，中间存在一段"激活但不裂解"的死区。
 这个观察直接导致了 **LldR 代谢自调控**这个设计要素的出现——
 如果乳酸被细菌过度消耗，系统会掉进死区而停止振荡。
-
-> 相关早期图：`figs/plasmid_sensitivity.png`、`figs/threshold_sensitivity.png`、
-> `figs/coupled_lactate_oscillation.png`、`figs/fig5_sensitivity_analysis.png`
 
 ---
 
@@ -204,6 +197,7 @@ val_avg_p = np.mean(ys_p[:, 2])
 | 文件 | 说明 |
 |---|---|
 | `testsafty`（无扩展名，4412 B） | 早期测试的输出/草稿，未归档 |
+| 各阶段中间输出图（14 张 PNG） | 未纳入归档；`figs/` 仅保留终版 6 张输出图 |
 | `test.py`（05-21 20:56） | 终版整理期的临时试验，未归档 |
 | `.claude/settings.local.json` | AI 辅助工具的配置，未归档 |
 | `gillespie_output.png` | 由 `src/06` 生成，文件名沿用历史（方法已非 Gillespie）|
